@@ -16,7 +16,7 @@ class CoffeeTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 25, bottom: 25),
+      padding: const EdgeInsets.only(left: 25, bottom: 220),
       child: Container(
         padding: EdgeInsets.all(12),
         width: 200,

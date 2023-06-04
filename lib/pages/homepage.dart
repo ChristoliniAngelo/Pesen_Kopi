@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:pesen_kopi/pages/profile.dart';
 import 'package:pesen_kopi/utillity/coffe_tile.dart';
 import 'package:pesen_kopi/utillity/coffe_type.dart';
 
@@ -52,11 +53,23 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.transparent,
+        title: Center(
+          child: Text(
+            'PESEN KOPI',
+            style: GoogleFonts.pacifico(fontSize: 12),
+          ),
+        ),
         leading: Icon(Icons.menu),
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 20.0),
-            child: Icon(Icons.person),
+            child: IconButton(
+              icon: const Icon(Icons.person),
+              onPressed: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) => Profile()));
+              },
+            ),
           ),
         ],
       ),
@@ -125,15 +138,23 @@ class _HomePageState extends State<HomePage> {
                 namakopi: 'Latte'),
             CoffeeTile(
                 gambarkopi: 'lib/images/cappuccino.jpg',
-                hargakopi: 'Rp.28.000',
+                hargakopi: 'Rp. 28.000',
                 deskripsikopi: 'With Almond Milk',
                 namakopi: 'Capucino'),
             CoffeeTile(
                 gambarkopi: 'lib/images/KopsuAren.jpg',
-                hargakopi: 'Rp.18.000',
+                hargakopi: 'Rp. 18.000',
                 deskripsikopi: 'With Brown Sugar',
-                namakopi: 'Kopi Kenangan Mantan')
-          ]))
+                namakopi: 'Kopi Kenangan Mantan'),
+            CoffeeTile(
+                gambarkopi: 'lib/images/baileys.jpg',
+                hargakopi: 'Rp. 24.000',
+                deskripsikopi: 'With Baileys Syrup',
+                namakopi: 'Kopi Baileys')
+          ])),
+          SizedBox(
+            height: 24,
+          )
         ],
       ),
     );

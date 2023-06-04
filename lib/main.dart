@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pesen_kopi/pages/homepage.dart';
+import 'package:pesen_kopi/pages/login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: true,
-      home: HomePage(),
+      home: LoginPage(),
       theme:
           ThemeData(brightness: Brightness.dark, primarySwatch: Colors.orange),
     );
