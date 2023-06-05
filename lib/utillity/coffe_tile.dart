@@ -58,7 +58,7 @@ class CoffeeTile extends StatelessWidget {
                       height: 150,
                       width: 200,
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(12),
                           image: DecorationImage(
                               fit: BoxFit.fitWidth,
                               image: AssetImage(gambarkopi)))),
@@ -76,7 +76,7 @@ class CoffeeTile extends StatelessWidget {
                       decoration: BoxDecoration(
                           color: Colors.orange,
                           borderRadius: BorderRadius.circular(6)),
-                      child: Icon(Icons.shopping_cart)),
+                      child: Icon(Icons.shopping_cart_outlined)),
                   SizedBox(
                     width: 10,
                   ),
@@ -85,7 +85,7 @@ class CoffeeTile extends StatelessWidget {
                       decoration: BoxDecoration(
                           color: Colors.orange,
                           borderRadius: BorderRadius.circular(6)),
-                      child: Icon(Icons.favorite))
+                      child: Icon(Icons.favorite_outline_outlined))
                 ],
               ),
             )

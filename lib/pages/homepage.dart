@@ -133,7 +133,7 @@ class _HomePageState extends State<HomePage> {
                     }),
               ),
               Container(
-                height: 600,
+                height: 780,
                 child: ListView(scrollDirection: Axis.vertical, children: [
                   CoffeeTile(
                       gambarkopi: 'lib/images/latte.jpg',

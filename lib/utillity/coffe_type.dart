@@ -15,7 +15,7 @@ class CoffeeType extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Navigator.of(context)
-            .push(MaterialPageRoute(builder: (context) => pages));
+            .pushReplacement(MaterialPageRoute(builder: (context) => pages));
       },
       child: Padding(
         padding: const EdgeInsets.only(left: 25.0),

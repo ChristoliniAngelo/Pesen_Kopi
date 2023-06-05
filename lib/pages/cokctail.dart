@@ -136,28 +136,28 @@ class _cocktailState extends State<cocktail> {
                     }),
               ),
               Container(
-                height: 600,
+                height: 780,
                 child: ListView(scrollDirection: Axis.vertical, children: [
                   CoffeeTile(
-                      gambarkopi: 'lib/images/espresso.jpg',
-                      hargakopi: 'Rp. 13.000',
-                      deskripsikopi: 'Will keep cheer you up',
-                      namakopi: 'Espresso'),
+                      gambarkopi: 'lib/images/midnight.jpg',
+                      hargakopi: 'Rp. 23.000',
+                      deskripsikopi: 'Bergadang Jangan Bergadang',
+                      namakopi: 'Midnight Storm'),
                   CoffeeTile(
-                      gambarkopi: 'lib/images/affogato.jpg',
-                      hargakopi: 'Rp. 20.000',
-                      deskripsikopi: 'With Dellicious Ice cream',
-                      namakopi: 'Affogato'),
+                      gambarkopi: 'lib/images/berry.jpg',
+                      hargakopi: 'Rp. 27.000',
+                      deskripsikopi: 'Count With Me!',
+                      namakopi: 'Berry Attack'),
                   CoffeeTile(
-                      gambarkopi: 'lib/images/coldbrew.jpg',
+                      gambarkopi: 'lib/images/lemon.png',
                       hargakopi: 'Rp. 25.000',
-                      deskripsikopi: 'Bombastic Flavors',
-                      namakopi: 'Iced Cold Brew'),
+                      deskripsikopi: 'Olivia Rodrigo Fav!',
+                      namakopi: 'Sour Paradise'),
                   CoffeeTile(
-                      gambarkopi: 'lib/images/joss.jpg',
-                      hargakopi: 'Rp. 10.000',
-                      deskripsikopi: 'Smoky Charcoal Coffee ',
-                      namakopi: 'Kopi Joss')
+                      gambarkopi: 'lib/images/honey.jpg',
+                      hargakopi: 'Rp. 22.000',
+                      deskripsikopi: 'Winnie, Give Back My Honey ',
+                      namakopi: 'Honeycomb')
                 ]),
               )
             ],

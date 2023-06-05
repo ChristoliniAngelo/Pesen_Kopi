@@ -136,28 +136,28 @@ class _SpesialState extends State<Spesial> {
                     }),
               ),
               Container(
-                height: 600,
+                height: 780,
                 child: ListView(scrollDirection: Axis.vertical, children: [
                   CoffeeTile(
                       gambarkopi: 'lib/images/gayo.jpg',
                       hargakopi: 'Rp. 60.000',
-                      deskripsikopi: 'A spesial package from far Gayo',
+                      deskripsikopi: 'A Spesial Package From Far Gayo',
                       namakopi: 'Gayo Pegasing'),
                   CoffeeTile(
-                      gambarkopi: 'lib/images/affogato.jpg',
-                      hargakopi: 'Rp. 20.000',
-                      deskripsikopi: 'With Dellicious Ice cream',
-                      namakopi: 'Affogato'),
+                      gambarkopi: 'lib/images/sungkebek.jpg',
+                      hargakopi: 'Rp. 45.000',
+                      deskripsikopi: 'Delightfull Taste From Mt.Sumbing',
+                      namakopi: 'Selection : Sungkebek'),
                   CoffeeTile(
-                      gambarkopi: 'lib/images/coldbrew.jpg',
-                      hargakopi: 'Rp. 25.000',
-                      deskripsikopi: 'Bombastic Flavors',
-                      namakopi: 'Iced Cold Brew'),
+                      gambarkopi: 'lib/images/papua.jpg',
+                      hargakopi: 'Rp. 75.000',
+                      deskripsikopi: 'Far East Papua Wait You',
+                      namakopi: 'Papua Paniai'),
                   CoffeeTile(
-                      gambarkopi: 'lib/images/joss.jpg',
-                      hargakopi: 'Rp. 10.000',
-                      deskripsikopi: 'Smoky Charcoal Coffee ',
-                      namakopi: 'Kopi Joss')
+                      gambarkopi: 'lib/images/putang.jpg',
+                      hargakopi: 'Rp. 50.000',
+                      deskripsikopi: 'Best Seller Beans ',
+                      namakopi: 'Putang Typica')
                 ]),
               )
             ],
