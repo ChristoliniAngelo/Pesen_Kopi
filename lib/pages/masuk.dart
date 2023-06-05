@@ -135,7 +135,7 @@ class _MasukState extends State<Masuk> {
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15))),
         onPressed: () {
-          Navigator.of(context).push(
+          Navigator.of(context).pushReplacement(
             MaterialPageRoute(builder: (context) => HomePage()),
           );
         },
