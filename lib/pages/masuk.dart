@@ -152,25 +152,13 @@ class _MasukState extends State<Masuk> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: AnnotatedRegion<SystemUiOverlayStyle>(
-        value: SystemUiOverlayStyle.light,
+        value: SystemUiOverlayStyle.dark,
         child: GestureDetector(
           child: Stack(
             children: [
               Container(
                 height: double.infinity,
                 width: double.infinity,
-                decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                        begin: Alignment.topCenter,
-                        end: Alignment.bottomCenter,
-                        //gradient
-                        colors: [
-                      Color(0xffF7BE6D),
-                      Color(0xffFFB347),
-                      Color(0xffFA9C1B),
-                      Color(0xffF58216),
-                      Color(0xffF05E16),
-                    ])),
                 child: SingleChildScrollView(
                   physics: AlwaysScrollableScrollPhysics(),
                   padding: EdgeInsets.symmetric(horizontal: 25, vertical: 120),
@@ -200,6 +188,13 @@ class _MasukState extends State<Masuk> {
                         height: 20,
                       ),
                       tombollogin(),
+                      SizedBox(
+                        height: 100,
+                      ),
+                      Icon(
+                        Icons.coffee_maker_outlined,
+                        size: 100,
+                      )
                     ],
                   ),
                 ),

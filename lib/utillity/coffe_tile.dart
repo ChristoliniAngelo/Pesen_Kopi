@@ -16,7 +16,7 @@ class CoffeeTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 25, bottom: 220),
+      padding: const EdgeInsets.only(left: 25, bottom: 20),
       child: Container(
         padding: EdgeInsets.all(12),
         width: 200,
@@ -24,31 +24,44 @@ class CoffeeTile extends StatelessWidget {
           borderRadius: BorderRadius.circular(12),
           color: Colors.black54,
         ),
-        //gambar kopi
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
-              child: ClipRRect(
-                  borderRadius: BorderRadius.circular(12),
-                  child: Image.asset(gambarkopi)),
-            ),
-            //deskripsi
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
-                    namakopi,
-                    style: TextStyle(fontSize: 20),
+                  Padding(
+                    padding:
+                        const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          namakopi,
+                          style: TextStyle(fontSize: 20),
+                        ),
+                        SizedBox(height: 4),
+                        Text(
+                          deskripsikopi,
+                          style: TextStyle(color: Colors.grey[700]),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(hargakopi),
+                      ],
+                    ),
                   ),
-                  SizedBox(height: 4),
-                  Text(
-                    deskripsikopi,
-                    style: TextStyle(color: Colors.grey[700]),
-                  )
+                  Container(
+                      height: 150,
+                      width: 200,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          image: DecorationImage(
+                              fit: BoxFit.fitWidth,
+                              image: AssetImage(gambarkopi)))),
                 ],
               ),
             ),
@@ -56,15 +69,23 @@ class CoffeeTile extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Text(hargakopi),
                   Container(
                       padding: EdgeInsets.all(4),
                       decoration: BoxDecoration(
                           color: Colors.orange,
                           borderRadius: BorderRadius.circular(6)),
-                      child: Icon(Icons.add))
+                      child: Icon(Icons.shopping_cart)),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Container(
+                      padding: EdgeInsets.all(4),
+                      decoration: BoxDecoration(
+                          color: Colors.orange,
+                          borderRadius: BorderRadius.circular(6)),
+                      child: Icon(Icons.favorite))
                 ],
               ),
             )

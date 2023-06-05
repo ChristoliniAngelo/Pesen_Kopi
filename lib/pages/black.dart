@@ -1,31 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:pesen_kopi/pages/black.dart';
 import 'package:pesen_kopi/pages/cokctail.dart';
+import 'package:pesen_kopi/pages/homepage.dart';
 import 'package:pesen_kopi/pages/profile.dart';
 import 'package:pesen_kopi/pages/spesial.dart';
 import 'package:pesen_kopi/pages/tea.dart';
 import 'package:pesen_kopi/utillity/coffe_tile.dart';
 import 'package:pesen_kopi/utillity/coffe_type.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class Black extends StatefulWidget {
+  const Black({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<Black> createState() => _BlackState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _BlackState extends State<Black> {
   //list tipe kopi
   final List coffeetype = [
     [
       'Milk-Based',
-      true,
+      false,
       HomePage(),
     ],
     [
       'Black',
-      false,
+      true,
       Black(),
     ],
     ['Speciallity', false, Spesial()],
@@ -136,25 +136,25 @@ class _HomePageState extends State<HomePage> {
                 height: 600,
                 child: ListView(scrollDirection: Axis.vertical, children: [
                   CoffeeTile(
-                      gambarkopi: 'lib/images/latte.jpg',
+                      gambarkopi: 'lib/images/espresso.jpg',
+                      hargakopi: 'Rp. 13.000',
+                      deskripsikopi: 'Will keep cheer you up',
+                      namakopi: 'Espresso'),
+                  CoffeeTile(
+                      gambarkopi: 'lib/images/affogato.jpg',
+                      hargakopi: 'Rp. 20.000',
+                      deskripsikopi: 'With Dellicious Ice cream',
+                      namakopi: 'Affogato'),
+                  CoffeeTile(
+                      gambarkopi: 'lib/images/coldbrew.jpg',
                       hargakopi: 'Rp. 25.000',
-                      deskripsikopi: 'With Oat Milk',
-                      namakopi: 'Latte'),
+                      deskripsikopi: 'Bombastic Flavors',
+                      namakopi: 'Iced Cold Brew'),
                   CoffeeTile(
-                      gambarkopi: 'lib/images/cappuccino.jpg',
-                      hargakopi: 'Rp. 28.000',
-                      deskripsikopi: 'With Almond Milk',
-                      namakopi: 'Capucino'),
-                  CoffeeTile(
-                      gambarkopi: 'lib/images/KopsuAren.jpg',
-                      hargakopi: 'Rp. 18.000',
-                      deskripsikopi: 'With Brown Sugar',
-                      namakopi: 'Kopi Kenangan Mantan'),
-                  CoffeeTile(
-                      gambarkopi: 'lib/images/baileys.jpg',
-                      hargakopi: 'Rp. 24.000',
-                      deskripsikopi: 'With Baileys Syrup',
-                      namakopi: 'Kopi Baileys')
+                      gambarkopi: 'lib/images/joss.jpg',
+                      hargakopi: 'Rp. 10.000',
+                      deskripsikopi: 'Smoky Charcoal Coffee ',
+                      namakopi: 'Kopi Joss')
                 ]),
               )
             ],
