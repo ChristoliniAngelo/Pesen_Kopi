@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:pesen_kopi/pages/black.dart';
 import 'package:pesen_kopi/pages/cokctail.dart';
 import 'package:pesen_kopi/pages/homepage.dart';
@@ -64,7 +65,7 @@ class _teaState extends State<tea> {
               style: GoogleFonts.pacifico(fontSize: 12),
             ),
           ),
-          leading: Icon(Icons.menu),
+          leading: Icon(LineAwesomeIcons.buy_n_large),
           actions: [
             Padding(
               padding: const EdgeInsets.only(right: 20.0),

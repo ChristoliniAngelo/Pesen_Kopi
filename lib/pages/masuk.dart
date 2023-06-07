@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pesen_kopi/pages/homepage.dart';
+import 'package:pesen_kopi/pages/profile.dart';
 
 class Masuk extends StatefulWidget {
   const Masuk({super.key});
