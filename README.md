@@ -1,16 +1,13 @@
 <h1>Pesen Kopi</h1>
+Flutter app to order beverages from your fav local coffeeshop
 
-A new Flutter project.
+## App Release 
+Here the Pesen Kopi Apk : 
 
-## Getting Started
+*note : the app is under develop please stay tune
 
-This project is a starting point for a Flutter application.
+## Tech Use :
 
-A few resources to get you started if this is your first Flutter project:
+Flutter, Express.js & Firebase
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Feel free if you want to contribute on this project !
